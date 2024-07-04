@@ -10,6 +10,7 @@ from app.constants import (
     options
 )
 
+
 def get_all_products() -> None:
     with webdriver.Chrome(options=options) as driver:
         parser = ProductParser(driver)
